@@ -60,6 +60,7 @@ func DoSignInHandler(c *gin.Context) {
 			"msg":  "LogIn failed",
 			"code": 10000,
 		})
+		return
 	}
 
 	token := util.GenToken(username)
